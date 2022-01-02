@@ -10,6 +10,7 @@ import { AboutUsComponent } from './PAGES/about-us/about-us.component';
 import { ContactComponent } from './PAGES/contact/contact.component';
 import { WorkComponent } from './PAGES/work/work.component';
 import { FAQComponent } from './PAGES/faq/faq.component';
+import { FooterComponent } from './COMPONENTS/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FAQComponent } from './PAGES/faq/faq.component';
     AboutUsComponent,
     ContactComponent,
     WorkComponent,
-    FAQComponent
+    FAQComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
