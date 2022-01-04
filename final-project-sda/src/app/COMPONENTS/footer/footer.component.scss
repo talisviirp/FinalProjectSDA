@@ -1,8 +1,4 @@
-.some {
-  span{
-    padding-left: 10px;
-  }
-}
+
 @media only screen and (max-width: 576px) {
   .content {
     display: flex;
@@ -11,9 +7,18 @@
   .some {
     display: flex;
     justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    img {
+      padding: 0 8px 0;
+    }
   }
   .footer_info {
     display: flex;
     justify-content: center;
+
   }
+}
+img {
+  height: 30px;
 }
