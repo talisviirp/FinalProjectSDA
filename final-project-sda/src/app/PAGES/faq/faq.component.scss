@@ -4,11 +4,26 @@
   box-sizing: border-box;
 }
 
-/*SECTION STYLES*/
+
+/*FAQ SECTION STYLES*/
 
 .faq-header {
   text-align: center;
   font-size: 45px;
   font-weight: 800;
+  margin: 40px 40px;
 }
 
+.faq-container {
+  border-width: medium;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.accordion-header {
+  border-left: 5px solid red;
+}
+
+.accordion-body {
+  background: lightyellow;
+}
