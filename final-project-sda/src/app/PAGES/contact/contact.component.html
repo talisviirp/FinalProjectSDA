@@ -1,3 +1,31 @@
 <app-header></app-header>
-<p>contact works!</p>
+<!-- Banner with picture saying Contact us or smt -->
+
+<!-- Information about how to get in touch with us -->
+
+<!-- Form for client messages -->
+<div class="container">
+  <div class="form_header text-center">
+    <H3>
+      CONTACT US:
+    </H3>
+  </div>
+  <form action="https://formsubmit.co/friik95@@email.com" method="POST">
+    <div class="mb-3">
+      <label class="form-label" for="name">Name*</label>
+      <input class="form-control" type="text" name="name" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="email">Email*</label>
+      <input class="form-control" type="email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="text">Message</label>
+      <input class="form-control" type="text" name="message" id="message" required>
+    </div>
+    <div class="submit_button d-flex justify-content-center mb-3">
+      <button type="submit" class="btn btn-dark ">Send</button>
+    </div>
+</form>
+</div>
 <app-footer></app-footer>
