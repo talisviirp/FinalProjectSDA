@@ -1,0 +1,45 @@
+.banner {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  background-image: url("../../../assets/pic4.jpeg");
+  background-size: cover;
+}
+// Small Screen <= 576px
+@media only screen and (max-width: 576px){
+  .infoBanner {
+    display: flex;
+    flex-direction: column;
+  }
+  .map, .infoTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoTab {
+    text-align: center;
+    padding: 12px;
+    margin: 8px;
+  }
+  .btn {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  .infoBanner {
+    display: flex;
+  }
+  .infoTab {
+    margin-right: 12px;
+    padding: 12px;
+  }
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    width: 25vw;
+  }
+}
