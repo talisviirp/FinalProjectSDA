@@ -2,7 +2,14 @@
 
   body {
     margin: 0;
-    padding: 0;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
   }
 
 
@@ -20,30 +27,39 @@
     align-items: center;
   }
 /*TEAMMATE STYLES*/
-  .teammates {
-    text-align: center;
-    margin: 0 10px 0 10px;
-    display: flex;
-    justify-content: space-between;
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .container {
+    padding: 0 15px;
   }
 
 
-  .teammates img {
-  border: 1px solid black;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  margin: 10px 10px;
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
-  .teammate1 {
-    border: 1px solid black;
-  }
+  /*About US BANNER STYLES*/
+  .about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
 
 
-  .teammate2 {
-    border: 1px solid black;
-  }
 
 
 
@@ -61,14 +77,19 @@
   //   padding: 5px 15px;
   // }
 
-  .teammates {
-    display: flex;
-    flex-direction: column;
-  }
+
 }
 @media only screen and (max-width: 576px) {
   .banner_content {
     flex-direction: column;
   }
+
 }
 
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
