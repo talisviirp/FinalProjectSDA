@@ -49,12 +49,22 @@
 // Black banner container
 .what_We_Do {
   // background-color: rgb(33, 37, 41);
-  background-color: black;
-  color: white;
+  // background-color: black;
+
+  background-color: white;
+  color: black;
   .container {
     padding: 10vh 0 10vh;
   }
 }
+// WHAT WE DO
+.services_banner {
+  display: flex;
+  width: 100vw;
+  height: 75vh;
+  background-image: linear-gradient(45deg ,blue, lightblue 50%);;
+}
+
 // black banner container properties
 .content {
   display: flex;
