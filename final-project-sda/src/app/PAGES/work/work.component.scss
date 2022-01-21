@@ -8,6 +8,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  .banner_logo {
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  }
   .banner_info {
     display: flex;
     align-items: center;

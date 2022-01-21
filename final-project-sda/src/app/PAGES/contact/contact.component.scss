@@ -8,6 +8,11 @@
 }
 .banner_logo {
   display: flex;
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
 }
 
 // Small Screen <= 576px
