@@ -1,0 +1,21 @@
+.form_banner {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_banner_container {
+  width: 100%;
+  max-width: 800px;
+}
+@media only screen and (max-width: 576px){
+  .btn {
+    width: 50vw;
+  }
+}
+@media only screen and (min-width: 577px) {
+  .btn {
+    width: 25vw;
+  }
+}

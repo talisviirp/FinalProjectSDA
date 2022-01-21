@@ -11,6 +11,7 @@ import { ContactComponent } from './PAGES/contact/contact.component';
 import { WorkComponent } from './PAGES/work/work.component';
 import { FAQComponent } from './PAGES/faq/faq.component';
 import { FooterComponent } from './COMPONENTS/footer/footer.component';
+import { ContactFormComponent } from './COMPONENTS/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './COMPONENTS/footer/footer.component';
     ContactComponent,
     WorkComponent,
     FAQComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
