@@ -2,7 +2,7 @@
 .banner {
   display: flex;
   height: 75vh;
-  background-image: linear-gradient(45deg ,blue, lightblue 60%);
+  background-color: rgba(220,20,60,.8);
 }
 .banner_content {
   display: flex;
@@ -40,8 +40,7 @@
 }
 // TEST FOR DESIGN - TO BE DELETED LATER
 .test_for_color {
-  // background-image: linear-gradient(0deg ,blue, lightblue 60%);
-  background-color: lightblue;
+  background-color: rgba(220,20,60,.8);
 }
 .work_done {
   display: flex;
@@ -49,6 +48,7 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  max-height: fit-content;
   margin: 10px;
 }
 .work_img {
@@ -57,7 +57,8 @@
   img {
     width: 100%;
     max-width: 800px;
-    height: auto;
+    height: 100%;
+    max-height: auto;
     box-shadow: 0 0 30px black;
   }
 }

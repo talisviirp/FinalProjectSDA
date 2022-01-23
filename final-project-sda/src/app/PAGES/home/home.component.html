@@ -24,34 +24,29 @@
       <div class="services_container">
         <div class="services_names">
           <div class="services">
-            <button class="btn">
+            <button id="web" class="btn" (click)="onclick('web')">
               <h3>Web Development Services</h3>
             </button>
-            <button class="btn">
+            <button id="design" class="btn" (click)="onclick('design')">
               <h3>Design Services</h3>
             </button>
-            <button class="btn">
+            <button id="out" class="btn" (click)="onclick('out')">
               <h3>Outsource</h3>
             </button>
-            <button class="btn">
+            <button id="digi" class="btn" (click)="onclick('digi')">
               <h3>Digital Marketing</h3>
             </button>
-            <button class="btn">
+            <button id="seo" class="btn" (click)="onclick('seo')">
               <h3>SEO Services</h3>
             </button>
-            <button class="btn">
+            <button id="business" class="btn" (click)="onclick('business')">
               <h3>Business Package</h3>
             </button>
           </div>
         </div>
         <div class="services_info_container">
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
+          <ul *ngFor="let item of myArray">
+            <li>{{item}}</li>
           </ul>
         </div>
       </div>
