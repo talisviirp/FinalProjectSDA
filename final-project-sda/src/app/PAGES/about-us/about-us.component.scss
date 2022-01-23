@@ -14,6 +14,7 @@
 
 
 /*MAIN CONTENT STYLES*/
+
 // BANNER STYLES
   .banner {
     display: flex;
@@ -33,6 +34,18 @@
       }
     }
   }
+
+  /*About US BANNER STYLES*/
+
+  .about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(217, 198, 208, 0.8);
+  color: black;
+  width: 100%;
+}
+
+
 /*TEAMMATE STYLES*/
 
   .introduction {
@@ -66,6 +79,7 @@
 
   .teammate-container {
     padding: 0 15px;
+    font-size: 1.5rem;
   }
 
 
@@ -75,15 +89,6 @@
     display: table;
   }
 
-  /*About US BANNER STYLES*/
-
-  .about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: black;
-  color: white;
-  margin: 16px 0;
-}
 
 /*OUR GOALS STYLES*/
 
@@ -107,6 +112,7 @@
 
 .goal-container {
   padding: 0 15px;
+  font-size: 1.5rem;
 }
 
 .goal-container::after{
@@ -145,13 +151,13 @@
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
   .teammate-column {
     width: 100%;
     display: block;
   }
 
-  .goal.goal-column {
+  .goal-column {
     width: 100%;
     display: block;
   }
