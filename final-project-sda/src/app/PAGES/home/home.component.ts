@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
   constructor() { }
 
   webDevServ: any = [
@@ -47,8 +48,24 @@ export class HomeComponent implements OnInit {
   busiPackage: any = [
     "Fixed price website"
   ]
-
+  myArray: any = this.webDevServ
   ngOnInit(): void {
   }
 
+  onclick(id: string) {
+    if (id == "web") {
+      this.myArray = this.webDevServ
+    } else if (id == "design") {
+      this.myArray = this.designServ
+    } else if (id == "out") {
+      this.myArray = this.outsource
+    } else if (id == "digi") {
+      this.myArray = this.digiMark
+    } else if (id == "seo") {
+      this.myArray = this.seoServ
+    } else if (id == "business") {
+      this.myArray = this.busiPackage
+    }
+
+  }
 }
