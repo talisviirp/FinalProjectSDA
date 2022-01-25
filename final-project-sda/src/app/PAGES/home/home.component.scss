@@ -19,7 +19,7 @@
   padding-right: auto;
 
   // color: wheat;
-  color: rgb(33, 37, 41);
+
 
   .banner_logo {
     display: flex;
@@ -41,7 +41,7 @@
   text-transform: uppercase;
   text-align: start;
   font-style: italic;
-
+  color: black;
 }
 
 .banner_info p {
@@ -49,6 +49,7 @@
   text-align: start;
   font-size: 22px;
   font-weight: 700;
+  color: rgb(33, 37, 41);
 }
 /*WELCOME BANNER END*/
 
@@ -122,6 +123,8 @@
         outline: none;
         box-shadow: none;
         .text {
+          transition: all .6s ease-in;
+          background-position: right;
           background-color: rgba(220,20,60,.8);
           color: white;
         }
@@ -187,7 +190,7 @@
 // <!-- WHY US BANNER -->
 .what_We_Do {
   background-color: rgba(220,20,60,.8);
-  color: wheat;
+  color: black;
   // color: rgb(33, 37, 41);
   .container {
     padding: 10vh 0 10vh;
@@ -210,6 +213,10 @@
   font-size: 26px;
   font-weight: 800;
   margin-bottom: 12px;
+}
+.content_card_body {
+  font-weight: bold;
+  color: rgb(33, 37, 41);
 }
 
 @media only screen and (min-width: 577px) {
