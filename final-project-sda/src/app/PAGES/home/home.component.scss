@@ -158,6 +158,17 @@
       min-width: 90vw;
       margin: 2vh 0 2vh;
       box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      .accordion-button {
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border-color: white !important;
+        }
+        &:not(.collapsed) {
+          background-color: rgba(220,20,60,.8);
+          color: white;
+        }
+      }
       .accordion-body {
         display: flex;
         align-items: center;
