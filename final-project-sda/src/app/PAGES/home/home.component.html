@@ -20,42 +20,46 @@
   <div class="container-fluid services_banner">
     <!-- Larger then 576px display -->
     <div class="container services_banner_container">
-      <div class="service_title">
-        <h1><strong>SERVICES</strong></h1>
-      </div>
-      <div class="services_container">
-        <div class="services_names">
-          <div class="services">
-            <button id="web" class="btn" (click)="onclick('web')">
-              <h3>Web Development Services</h3>
-            </button>
-            <button id="design" class="btn" (click)="onclick('design')">
-              <h3>Design Services</h3>
-            </button>
-            <button id="out" class="btn" (click)="onclick('out')">
-              <h3>Outsource</h3>
-            </button>
-            <button id="digi" class="btn" (click)="onclick('digi')">
-              <h3>Digital Marketing</h3>
-            </button>
-            <button id="seo" class="btn" (click)="onclick('seo')">
-              <h3>SEO Services</h3>
-            </button>
-            <button id="business" class="btn" (click)="onclick('business')">
-              <h3>Business Package</h3>
-            </button>
-          </div>
+      <div class="container ">
+        <!-- Title of the section -->
+        <div class="container service_title">
+          <h1><strong>SERVICES</strong></h1>
         </div>
-        <div class="services_info_container">
-          <ul *ngFor="let item of myArray">
-            <li>{{item}}</li>
-          </ul>
+        <!-- Content of the section -->
+        <div class="container services_container">
+          <div class="services_names">
+            <div class="services">
+              <button id="web" class="btn" (click)="onclick('web')">
+                <h3 class="text">Web Development Services</h3>
+              </button>
+              <button id="design" class="btn" (click)="onclick('design')">
+                <h3 class="text">Design Services</h3>
+              </button>
+              <button id="out" class="btn" (click)="onclick('out')">
+                <h3 class="text">Outsource</h3>
+              </button>
+              <button id="digi" class="btn" (click)="onclick('digi')">
+                <h3 class="text">Digital Marketing</h3>
+              </button>
+              <button id="seo" class="btn" (click)="onclick('seo')">
+                <h3 class="text">SEO Services</h3>
+              </button>
+              <button id="business" class="btn" (click)="onclick('business')">
+                <h3 class="text">Business Package</h3>
+              </button>
+            </div>
+          </div>
+          <div class="services_info_container">
+            <ul *ngFor="let item of myArray">
+              <li><h3>{{item}}</h3></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <!-- Smaller then 577px display -->
     <div class="container services_banner_small" >
-      <div class="service_title mb-4">
+      <div class="service_title my-4">
         <h1><strong>SERVICES</strong></h1>
       </div>
       <div class="accordion" id="accordionExample">
@@ -69,7 +73,7 @@
             <div class="accordion-body">
               <div class="services_info_container">
                 <ul *ngFor="let item of webDevServ">
-                  <li>{{item}}</li>
+                  <li><h5>{{item}}</h5></li>
                 </ul>
               </div>
             </div>
@@ -85,7 +89,7 @@
             <div class="accordion-body">
               <div class="services_info_container">
                 <ul *ngFor="let item of designServ">
-                  <li>{{item}}</li>
+                  <li><h5>{{item}}</h5></li>
                 </ul>
               </div>
             </div>
@@ -101,7 +105,7 @@
             <div class="accordion-body">
               <div class="services_info_container">
                 <ul *ngFor="let item of outsource">
-                  <li>{{item}}</li>
+                  <li><h5>{{item}}</h5></li>
                 </ul>
               </div>
             </div>
@@ -117,7 +121,7 @@
             <div class="accordion-body">
               <div class="services_info_container">
                 <ul *ngFor="let item of digiMark">
-                  <li>{{item}}</li>
+                  <li><h5>{{item}}</h5></li>
                 </ul>
               </div>
             </div>
@@ -133,7 +137,7 @@
             <div class="accordion-body">
               <div class="services_info_container">
                 <ul *ngFor="let item of seoServ">
-                  <li>{{item}}</li>
+                  <li><h5>{{item}}</h5></li>
                 </ul>
               </div>
             </div>
@@ -149,7 +153,7 @@
             <div class="accordion-body">
               <div class="services_info_container">
                 <ul *ngFor="let item of busiPackage">
-                  <li>{{item}}</li>
+                  <li><h5>{{item}}</h5></li>
                 </ul>
               </div>
             </div>

@@ -53,6 +53,7 @@ export class HomeComponent implements OnInit {
   }
 
   onclick(id: string) {
+
     if (id == "web") {
       this.myArray = this.webDevServ
     } else if (id == "design") {
