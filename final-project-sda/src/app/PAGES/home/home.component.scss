@@ -96,7 +96,7 @@
   }
 }
 // SERVICE BANNER MEDIA QUERY: SIZE MEDIUM to LARGE
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 769px) {
   .services_names {
     width: 50%;
     margin-right: 5vw;
@@ -146,7 +146,7 @@
   }
 }
 // SERVICE BANNER MEDIA QUERY : SIZE SMALL
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .services_banner_small {
     height: auto;
     max-height: fit-content;
@@ -230,7 +230,7 @@
   color: rgb(33, 37, 41);
 }
 
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 993px) {
   .banner {
     display: flex;
     flex-direction: row;
@@ -250,7 +250,7 @@
     padding-right: 2vw;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
   .banner_info {
     display: flex;
     justify-content: center;
