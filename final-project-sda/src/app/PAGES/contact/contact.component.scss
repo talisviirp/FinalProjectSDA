@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   height: 75vh;
-  background-color: rgba(220,20,60,.8);
   background-size: cover;
+  background-color: rgba(220,20,60,.8);
 }
 .banner_logo {
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 // Small Screen <= 576px
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 772px){
   .banner_logo {
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@
   }
 }
 
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 773px) {
   .banner_info {
     display: flex;
     justify-content: center;
@@ -54,6 +54,7 @@
   }
   .infoBanner {
     display: flex;
+    justify-content: space-between;
   }
   .infoTab {
     width: 50vw;
