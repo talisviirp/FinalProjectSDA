@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
 /*WELCOME BANNER START*/
@@ -36,7 +34,7 @@
     }
   }
   .btn {
-    color: black;
+    color: white;
   }
 }
 
@@ -45,17 +43,15 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: start;
-  // font-style: italic;
-  font-family: 'Dancing Script', cursive;
-  color: yellow;
+  color: black;
 }
 
 .banner_info p {
-  // color: rgb(33, 37, 41);
   text-align: start;
   font-size: 22px;
-  font-weight: 700;
   color: rgb(33, 37, 41);
+  font-style: italic;
+  background-color: rgba(255, 255, 255, .5);
 }
 /*WELCOME BANNER END*/
 
@@ -192,8 +188,7 @@
       h5 {
         width: max-content;
         padding: 0 5% 0;
-        // background-color: rgba(220,20,60,.2);
-        background-color: rgba(255, 255, 0, .2);
+        background-color: rgba(220,20,60,.2);
         color: black;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
       }
@@ -276,7 +271,8 @@
       text-align: center;
     }
     p {
-      padding-top: 48px;
+      margin-top: 48px;
+      padding: 0 6px 0;
     }
   }
   .content {
