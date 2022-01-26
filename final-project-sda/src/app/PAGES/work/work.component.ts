@@ -11,16 +11,15 @@ export class WorkComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-@HostListener('window:scroll', ['$event.target']) // for window scroll events
+// MAKES SCROLLING ANIMATION POSSIBLE
+  @HostListener('window:scroll', ['$event.target']) // for window scroll events
   scroll(e: { scrollingElement: { scrollTop: any; }; }) {
-  let y = window.scrollY;
+    let y = window.scrollY;
     let myID = document.getElementById("myID") as HTMLElement;
     if (y >= 800) {
       myID.className = "background_text show"
     } else {
       myID.className = "background_text hide"
     }
-
-}
+  }
 }

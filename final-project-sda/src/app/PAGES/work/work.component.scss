@@ -36,12 +36,12 @@
 
 // BACKGROUND TEXT TEST
 
+
 .background_text {
   display: flex;
   justify-content: center;
   align-items: center;
   background-attachment:scroll;
-  opacity: .2;
   span {
     position: fixed;
     top:33vh;
@@ -52,7 +52,7 @@
   opacity: 0;
 }
 .show {
-  opacity: .5;
+  opacity: .2;
 }
 
 // Styles for "Work Done" Banner
@@ -63,6 +63,7 @@
   background-color: white;
   position: relative;
 }
+
 // TEST FOR DESIGN - TO BE DELETED LATER
 .test_for_color {
   background-color: rgba(220,20,60,.8);

@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: rgba(220,20,60,.8);
+}
+canvas {
+  margin: auto;
+}
+span {
+  color: #777;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  user-select: none;
+}
