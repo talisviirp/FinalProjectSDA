@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
 /*WELCOME BANNER START*/
@@ -35,7 +33,7 @@
     }
   }
   .btn {
-    color: black;
+    color: white;
   }
 }
 
@@ -44,17 +42,15 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: start;
-  // font-style: italic;
-  font-family: 'Dancing Script', cursive;
-  color: yellow;
+  color: black;
 }
 
 .banner_info p {
-  // color: rgb(33, 37, 41);
   text-align: start;
   font-size: 22px;
-  font-weight: 700;
   color: rgb(33, 37, 41);
+  font-style: italic;
+  background-color: rgba(255, 255, 255, .5);
 }
 /*WELCOME BANNER END*/
 
@@ -241,11 +237,7 @@
   margin-bottom: 12px;
 }
 .content_card_body {
-<<<<<<< HEAD
   // font-weight: bold;
-=======
-  font-weight: bold;
->>>>>>> fd397b25810bdba8074077770ab5b3356342caab
   color: black;
 }
 
@@ -279,7 +271,8 @@
       text-align: center;
     }
     p {
-      padding-top: 48px;
+      margin-top: 48px;
+      padding: 0 6px 0;
     }
   }
   .content {

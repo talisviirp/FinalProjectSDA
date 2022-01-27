@@ -15,7 +15,7 @@ export class WorkComponent implements OnInit {
   @HostListener('window:scroll', ['$event.target']) // for window scroll events
   scroll(e: { scrollingElement: { scrollTop: any; }; }) {
     let y = window.scrollY;
-    let myID = document.getElementById("myID") as HTMLElement;
+    let myID = document.getElementById("navScript") as HTMLElement;
     if (y >= 800) {
       myID.className = "background_text show"
     } else {
