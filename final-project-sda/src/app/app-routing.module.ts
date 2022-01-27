@@ -5,6 +5,7 @@ import { ContactComponent } from './PAGES/contact/contact.component';
 import { FAQComponent } from './PAGES/faq/faq.component';
 import { HomeComponent } from './PAGES/home/home.component';
 import { WorkComponent } from './PAGES/work/work.component';
+import { TestJSComponent } from './test-js/test-js.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'faq', component: FAQComponent},
   {path: 'work', component: WorkComponent},
+  {path: 'testJS', component: TestJSComponent},
   {path: '**', redirectTo: 'home'}
 ];
 
