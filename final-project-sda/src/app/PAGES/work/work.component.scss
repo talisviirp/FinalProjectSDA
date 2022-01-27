@@ -107,7 +107,7 @@
     li {
       padding: 5px 10px 5px;
       margin: .5vw;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
     }
   }
 }
@@ -172,6 +172,7 @@ body {
 .btn {
     @include reset-button;
     display: block;
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     padding: 16px 36px 22px;
