@@ -1,48 +1,48 @@
 /*GLOBAL STYLES*/
 
-  body {
-    margin: 0;
-  }
+body {
+  margin: 0;
+}
 
-  html {
-    box-sizing: border-box;
-  }
+html {
+  box-sizing: border-box;
+}
 
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 
 /*MAIN CONTENT STYLES*/
 
 // BANNER STYLES
-  .banner {
-    display: flex;
-    align-items: center;
-    height: 75vh;
-    background-color: rgba(220,20,60,.8);
-  }
-  .banner_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .banner_logo {
-      img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-      }
+.banner {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  background-color: rgba(220,20,60,.8);
+}
+.banner_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .banner_logo {
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
     }
   }
+}
 
-  /*About US BANNER STYLES*/
+/*About US BANNER STYLES*/
 
-  .about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: rgba(217, 198, 208, 0.8);
-  color: black;
-  width: 100%;
+.about-section {
+padding: 50px;
+text-align: center;
+background-color: rgba(217, 198, 208, 0.8);
+color: black;
+width: 100%;
 }
 
 
@@ -50,76 +50,89 @@
 /*GOAL STYLES*/
 /*I changed it up to avoid duplicate code ;)*/
 
-  .introduction {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 10px 10px;
-  }
+.introduction {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px 10px;
+}
 
-  .teammate-column, .goal-column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
+.teammate-column, .goal-column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
-  .teammate-card, .goal-card {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    margin: 8px;
-    text-align: center;
-  }
+.teammate-card, .goal-card {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin: 8px;
+  text-align: center;
+}
 
-  .teammate-card h2, .goal-card h2 {
-    font-size: 35px;
-    font-weight: 700;
-  }
+.teammate-card h2, .goal-card h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
 
-  .teammate-title {
-    font-size: 23px;
-  }
+.teammate-title {
+  font-size: 23px;
+}
 
-  .teammate-container, .goal-container {
-    padding: 0 15px;
-    font-size: 1.5rem;
-  }
+.teammate-container, .goal-container {
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
 
 
-  .teammate-container::after, .row::after, .goal-container::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.teammate-container::after, .row::after, .goal-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /*BANNER/TEAMMATE MEDIA QUERY*/
 @media only screen and (max-width: 767px) {
-  // .banner h1 {
-  //   font-size: 30px;
-  // }
+// .banner h1 {
+//   font-size: 30px;
+// }
 
-  // .banner p {
-  //   display: none;
-  // }
+// .banner p {
+//   display: none;
+// }
 
-  // .banner a {
-  //   padding: 5px 15px;
-  // }
+// .banner a {
+//   padding: 5px 15px;
+// }
 
 
 }
 @media only screen and (max-width: 576px) {
-  .banner_content {
-    flex-direction: column;
-  }
+.banner_content {
+  flex-direction: column;
+ }
 
+.container-fluid {
+  flex-direction: column;
+ }
 }
 
 
-@media screen and (max-width: 670px) {
+@media only screen and (max-width: 670px) {
+.teammate-column, .goal-column {
+  width: 100%;
+  display: block;
+ }
+}
+
+@media only screen and (max-width: 1300px) {
   .teammate-column, .goal-column {
-    width: 100%;
+    width: fit-content;
     display: block;
   }
 
+  img {
+    height: 400px;
+    width: 400px;
+  }
 }
-
