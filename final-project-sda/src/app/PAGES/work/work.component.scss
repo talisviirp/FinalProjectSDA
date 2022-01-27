@@ -1,4 +1,6 @@
 // Welcome Banner
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 .testDiv {
   position: relative;
 }
@@ -43,6 +45,7 @@
   align-items: center;
   background-attachment:scroll;
   span {
+    // font-family: 'Staatliches', cursive;
     position: fixed;
     top:33vh;
     font-size: 13vw;
