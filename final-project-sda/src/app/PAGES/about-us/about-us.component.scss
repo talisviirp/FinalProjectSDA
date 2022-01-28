@@ -30,7 +30,19 @@
     text-align: center;
   }
 }
+.slide-top {
+  animation: 1s slide-top;
 
+}
+@keyframes slide-top {
+  from {
+    margin-top: -150vh;
+  }
+
+  to {
+      margin-top: 0%;
+  }
+}
 
 /*TEAMMATE STYLES*/
 /*VALUE STYLES*/

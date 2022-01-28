@@ -13,6 +13,34 @@
     height: auto;
   }
 }
+.slide-top {
+  animation: 1s slide-top;
+
+}
+@keyframes slide-top {
+  from {
+    margin-top: -150vh;
+  }
+
+  to {
+      margin-top: 0%;
+  }
+}
+// .slide-left {
+//   animation: 2s slide-left;
+//   // animation-delay: 1s;
+// }
+// @keyframes slide-left {
+//   from {
+//     margin-right: -100vh;
+//     opacity: 0;
+//   }
+
+//   to {
+//     margin-right: 0%;
+//     opacity: 1;
+//   }
+// }
 
 .office-info {
   font-size: 1.3rem;
