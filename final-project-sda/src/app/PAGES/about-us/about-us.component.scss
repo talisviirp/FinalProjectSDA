@@ -22,14 +22,16 @@
 }
 
 
-
 /*TEAMMATE STYLES*/
-.teammate-image {
+/*VALUE STYLES*/
+.teammate-image, .value-image {
   margin: auto;
   width: 100%;
 }
-/*TEAMMATE DESCPRITON*/
-#teammate-info {
+
+/*TEAMMATE DESCRIPTION*/
+/*VALUE DESCRIPTION*/
+#teammate-info, #value-info {
   font-size: 1.3rem;
 }
 
@@ -47,7 +49,6 @@
 // .banner a {
 //   padding: 5px 15px;
 // }
-
 }
 @media only screen and (max-width: 576px) {
 .banner_content {
