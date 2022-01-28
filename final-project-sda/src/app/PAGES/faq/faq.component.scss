@@ -18,10 +18,21 @@
   justify-content: center;
   align-items: center;
   .banner_logo {
+    display: flex;
+    height: 100%;
     img {
       width: 100%;
-      max-width: 400px;
+      max-width: 800px;
       height: auto;
+    }
+  }
+  .banner_info {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-align: center;
     }
   }
 }
@@ -41,3 +52,8 @@
   font-size: 1.3rem;
 }
 
+@media only screen and (min-width: 577px) {
+  .banner_content {
+    height: 50vh;
+  }
+}

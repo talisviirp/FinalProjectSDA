@@ -1,22 +1,22 @@
 // Welcome Banner
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-.testDiv {
-  position: relative;
-}
 .banner {
   display: flex;
+  align-items: center;
   height: 75vh;
   background-color: rgba(220,20,60,.8);
 }
 .banner_content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   .banner_logo {
+    display: flex;
     img {
       width: 100%;
-      max-width: 400px;
+      max-width: 800px;
       height: auto;
     }
   }
@@ -32,6 +32,11 @@
 @media only screen and (max-width: 576px) {
   .banner_content {
     flex-direction: column;
+  }
+}
+@media only screen and (min-width:577px) {
+  .banner_content {
+    height: 50%;
   }
 }
 // END OF Welcome Banner

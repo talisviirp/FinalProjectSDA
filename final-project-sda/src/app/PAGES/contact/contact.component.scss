@@ -9,7 +9,7 @@
   display: flex;
   img {
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     height: auto;
   }
 }
@@ -59,6 +59,7 @@
   .banner_content {
     display: flex;
     justify-content: center;
+    height: 50vh;
   }
   .infoBanner {
     display: flex;
