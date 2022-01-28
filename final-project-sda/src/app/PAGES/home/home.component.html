@@ -20,7 +20,7 @@
   <div class="container-fluid services_banner">
     <!-- Larger then 576px display -->
     <div class="container services_banner_container">
-      <div class="container ">
+      <div class="container">
         <!-- Title of the section -->
         <div class="container service_title">
           <h1><strong>SERVICES</strong></h1>
@@ -28,7 +28,7 @@
         <!-- Content of the section -->
         <div class="container services_container">
           <div class="services_names">
-            <div class="services">
+            <div data-aos="fade-in" class="services">
               <button id="web" class="btn" (click)="onclick('web')">
                 <h3 class="text">Web Development Services</h3>
               </button>
@@ -51,14 +51,14 @@
           </div>
           <div class="services_info_container">
             <ul *ngFor="let item of myArray">
-              <li><h3>{{item}}</h3></li>
+              <li data-aos="fade-left" data-aos-delay="100"><h3>{{item}}</h3></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <!-- Smaller then 577px display -->
-    <div class="container services_banner_small" >
+    <div data-aos="fade-in" class="container services_banner_small" >
       <div class="service_title my-4">
         <h1><strong>SERVICES</strong></h1>
       </div>
@@ -174,7 +174,7 @@
           <div class="content_card_header">
             <span>We're specialized.</span>
           </div>
-          <div class="content_card_body">
+          <div data-aos="fade-down" class="content_card_body">
             <p>We're not generalists, we only offer you what we do best: Branded assets, UI/UX design, full-stack development, and conversion optimization.</p>
           </div>
         </div>
@@ -182,7 +182,7 @@
           <div class="content_card_header">
             <span>We focus on results.</span>
           </div>
-          <div class="content_card_body">
+          <div data-aos="fade-down" class="content_card_body">
             <p>We care about the impact our work has on your business or organization—not how it looks in our portfolio or in an award showcase.</p>
           </div>
         </div>
@@ -190,7 +190,7 @@
           <div class="content_card_header">
             <span>We're responsive.</span>
           </div>
-          <div class="content_card_body">
+          <div data-aos="fade-down" class="content_card_body">
             <p>We limit the number of clients we take on each year to ensure each one has an outstanding customer experience. Expect responses in hours—not days.</p>
           </div>
         </div>
@@ -198,7 +198,7 @@
           <div class="content_card_header">
             <span>We go the extra mile.</span>
           </div>
-          <div class="content_card_body">
+          <div data-aos="fade-down" class="content_card_body">
             <p>We view our engagements as relationships—not vendor agreements. In addition to what we produce, we also educate our customers on digital best practices along the way.</p>
           </div>
         </div>

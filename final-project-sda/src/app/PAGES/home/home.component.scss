@@ -231,7 +231,6 @@
 .what_We_Do {
   background-color: rgba(220,20,60,.8);
   color: black;
-  // color: rgb(33, 37, 41);
   .container {
     padding: 10vh 0 10vh;
   }
@@ -305,10 +304,12 @@
       padding: 0 6px 0;
     }
   }
-  .content {
-    flex-direction: column;
-  }
   .content_card_body {
     padding-right: 10vw;
+  }
+}
+@media only screen and (max-width:576px) {
+  .content {
+    flex-direction: column;
   }
 }
