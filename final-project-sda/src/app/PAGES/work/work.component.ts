@@ -22,4 +22,5 @@ export class WorkComponent implements OnInit {
       myID.className = "background_text hide"
     }
   }
+
 }
