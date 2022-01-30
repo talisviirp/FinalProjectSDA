@@ -47,6 +47,7 @@ Site has red-white-red color scheme.
 Font Used - 'Playfair Display', serif from Google Fonts
 Svg Icons - https://www.manypixels.co/gallery
 
+
 * Antimations - https://michalsnik.github.io/aos/
 * Using Bootstrap Variables
 * Text color on Red banners: Black or Wheat?\
