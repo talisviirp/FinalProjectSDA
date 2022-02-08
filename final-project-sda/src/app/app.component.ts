@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'final-project-sda';
+
+  onActivate(event: any) {
+    window.scroll(0,0);
+  }
 }
