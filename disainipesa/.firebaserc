@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "disainest": {
+      "hosting": {
+        "disainipesa": [
+          "disainest"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "disainest"
+  }
+}

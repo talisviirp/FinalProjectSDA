@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light border-bottom sticky-top">
+  <!-- Upper Navigation Bar -->
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bi bi-list"></span>
+    </button>
+    <a class="navbar-brand ms-lg-3 fs-3" routerLink="/home" href="#"><strong>DEZIGNEST</strong></a>
+    <div class="icons d-flex">
+      <button routerLink="/cart" class="btn">
+        <span class="bi bi-cart"></span>
+        <div *ngIf="totalItem >0" style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+      <form class="d-flex border border-gray rounded">
+        <input class="form_control form-control border-0" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">
+          <span class="bi bi-search"></span>
+        </button>
+      </form>
+      <ul class="upper_span navbar-nav me-auto mb-2 mb-lg-2 mt-lg-2 me-lg-0">
+        <li>
+          <span routerLink="/apply" href=""><strong>Sell on Dezignest </strong></span>
+        </li>
+        <li>
+          <span routerLink="/account/login" href=""><strong>Sign In</strong></span>
+        </li>
+        <button routerLink="/account/register" class="btn btn-dark btn-sm ms-lg-3" type="signUp">Sign Up to Shop</button>
+      </ul>
+    </div>
+  </div>
+  <!-- Lower Navigation bar -->
+  <div class="container-fluid lower_bar">
+    <div class="container-lg collapse navbar-collapse d-lg-flex justify-content-center" id="navbarTogglerDemo03">
+      <ul class="lower_menu_lg navbar-nav mx-lg-1 mb-2 mb-lg-0">
+        <li *ngFor="let category of categories" class="mx-lg-2">
+          <span routerLink="/category/{{category}}">{{category}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,48 @@
+
+
+.container-fluid {
+  background-image: url("../../../assets/testBanner2.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  min-height: fit-content;
+  // height: 95v;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/testBanner.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.banner_container {
+  padding-top: 20vw;
+  padding-bottom: 10vw;
+}
+.header_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 30px ;
+  h5 {
+    font-style:italic;
+    // font-size: max(1.5vw, 20px);
+    font-size: clamp(25px, 2.5vw, 38px);
+  }
+}
+h1 {
+  font-size: 10vw; /* Browsers that do not support "MIN () - MAX ()" and "Clamp ()" functions will take this value.*/
+  font-size: max(100px, min(10vw, 150px)); /* Browsers that do not support the "clamp ()" function will take this value. */
+  font-size: clamp(50px, 5vw, 75px);
+  font-weight: 500;
+  align-self:center;
+}
+.btn_signup, .btn_applybrand {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}

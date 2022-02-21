@@ -1,0 +1,98 @@
+<!-- Loggin View -->
+<div *ngIf="!isAuthenticated" class="container-fluid d-flex flex-column align-items-center">
+  <div *ngIf="stringState" class="container-fluid mb-auto" style="height: 100vh;">
+    <div class="container d-flex flex-column">
+      <form #loginForm="ngForm" id="login_form" class="d-flex flex-column align-items-center" (ngSubmit)="signUserIn(loginForm)">
+        <h1 class="d-flex justify-content-center my-5"><strong>Login</strong></h1>
+        <div class="col mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" #email="ngModel" name="email" required class="form-control w-80" id="inputEmail3"ngModel>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input id="login_input" type="password" #password="ngModel" required name="password" class="form-control" id="inputPassword3" ngModel>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center mb-5 pb-5">
+          <a class="pb-3 span_deco" (click)="onClick()">Forgot Password?</a>
+          <div class="py-3 ">
+            <button type="submit" [disabled]="loginForm.invalid" class="btn btn-lg btn-dark">Sign In</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Forgotten Password View -->
+  <div class="container-fluid" *ngIf="!stringState" style="height: 100vh;">
+    <div class="container container d-flex flex-column">
+      <form id="reset_password_form" class="d-flex flex-column align-items-center ">
+        <h2 class="d-flex justify-content-center my-5"><strong>RESET YOUR PASSWORD</strong></h2>
+        <span>We will send you an email to reset your password.</span>
+        <div class="col my-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10 pb-3" >
+            <input type="email" class="form-control w-80" id="inputEmail3">
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center mb-5 pb-5">
+          <button class="btn btn-dark btn-lg">Submit</button>
+          <a class="mt-4 span_deco" (click)="onClick()">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Form View -->
+<div *ngIf="isAuthenticated" class="container-fluid px-0">
+  <div class="form_header">
+    <h3><strong>Product Listing Form</strong></h3>
+    <div class="user_info">
+      <span class="me-sm-3">{{user}}</span>
+      <button class="btn btn-dark mb-1" (click)="signOut()">Login out</button>
+    </div>
+  </div>
+  <div class="containers">
+    <form #addProducts="ngForm" class="w-sm-25" (ngSubmit)="onSubmit(addProducts)">
+
+        <label for="brand">Brand</label>
+        <input type="text" name="brand" id="brand" #brand="ngModel" required ngModel />
+        <span *ngIf="brand.invalid && brand.touched" style="color: red;">Brand Required</span>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" #name="ngModel" required ngModel />
+        <span *ngIf="name.invalid && name.touched" style="color: red;">Name Required</span>
+
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" #price="ngModel" required ngModel />
+        <span *ngIf="price.invalid && price.touched" style="color: red;">Price Required</span>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" id="quantity" #quantity="ngModel" required ngModel />
+        <span *ngIf="quantity.invalid && quantity.touched" style="color: red;">Quantity Required</span>
+
+        <label for="SKU">SKU</label>
+        <input type="text" name="sku" id="sku" #sku="ngModel" required ngModel>
+        <span *ngIf="sku.invalid && sku.touched" style="color: red;">SKU Code Required</span>
+
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" name="description" id="description" rows="3" #description="ngModel" minlength="10" maxlength="100" required ngModel></textarea>
+        <span *ngIf="description.invalid && description.touched" style="color: red;"> Min of 10 characters and max of 100</span>
+
+        <label for="category">Category</label>
+        <select class="my-2 border form-select form-select-sm border rounded-1" #category="ngModel" ngModel required name="category" aria-label="Default selected example">
+          <!-- <option disabled selected >Open this select menu</option> -->
+          <option value="" disabled>Please Choose...</option>
+          <option *ngFor="let category of categories" [value]="category">{{category | titlecase}}</option>
+        </select>
+
+        <label for="formFile" class="form-label mt-3">Upload cover photo</label>
+        <input class="form-control" type="file" id="formFile" name="imagepreview" (change)="onFileClicked($event, 'main')" form="addProducts" />
+        <img *ngIf="imagePreview" [src]="imagePreview" width="400px" height="200px" alt="">
+
+        <button class="mt-sm-4 btn btn-dark" type="submit" [disabled]="addProducts.invalid">Submit</button>
+    </form>
+  </div>
+</div>

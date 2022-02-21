@@ -1,0 +1,71 @@
+<app-header-new></app-header-new>
+<ng-container *ngFor="let product of productInfo">
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="javascript:history.back()">Category</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{product.name}}</li>
+    </ol>
+  </nav>
+</div>
+<div class="container-fluid d-flex flex-column flex-md-row align-items-center align-items-md-start">
+  <div class="gallery d-flex justify-content-center p-md-5 w-lg-50">
+    <img class="big_pic img-fluid img-thumbnail" [src]="product.imageUrl">
+  </div>
+  <div class="product_info d-flex flex-column w-lg-50">
+    <div class ="prod_info mt-3">
+      <h2>{{product.name}}</h2>
+      <h5><strong>{{product.price | currency: 'EUR'}}</strong></h5>
+      <p style="opacity: .7;">{{product.brand}}</p>
+      <button class="btn btn-dark w-100" (click)="onAddToCartClick(productInfo)">ADD TO CART</button>
+    </div>
+    <div class="description container my-5 d-flex flex-column ">
+      <h6>STYLE NOTES</h6>
+      <p>{{product.description}}</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo excepturi eius vero rem at? Repellendus aliquid adipisci temporibus unde omnis officia. Dignissimos voluptatum ea accusamus optio temporibus nesciunt labore distinctio?</p>
+      <div class="accordion w-100" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</ng-container>
+<app-footer></app-footer>

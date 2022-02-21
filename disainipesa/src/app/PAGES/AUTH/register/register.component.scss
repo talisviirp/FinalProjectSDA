@@ -1,0 +1,11 @@
+
+@media only screen and (max-width: 768px) {
+  #inputEmail3, #inputPassword3, #inputFirstName, #inputLastName {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #inputEmail3, #inputPassword3, #inputFirstName, #inputLastName {
+    width: 50vw;
+  }
+}

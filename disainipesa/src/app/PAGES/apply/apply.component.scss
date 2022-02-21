@@ -1,0 +1,40 @@
+.header {
+  align-items: center;
+  font-size: 30px;
+  opacity: .8;
+  border-bottom: 1px solid gainsboro;
+  a:link {
+    text-decoration: none;
+    }
+  a {
+    color: black;
+  }
+}
+.bg_img {
+  display: flex;
+  align-items: center;
+  min-height: min-content;
+  max-height:none;
+  background-image: url("../../../assets/banner2.jpg");
+  background-size: cover;
+}
+@media only screen and (min-width: 577px) {
+
+ }
+form {
+  min-width: 250px;
+  max-width: 500px;
+  background-color: white;
+
+  border-radius: 25px;
+  label {
+    color: grey;
+  }
+}
+ @media only screen and (max-width: 576px) {
+  form {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 1vh;
+  }
+ }

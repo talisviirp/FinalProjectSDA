@@ -1,0 +1,99 @@
+<app-header-new></app-header-new>
+
+<!-- Stuffed Bag View -->
+<ng-container *ngIf="products.length !=0" >
+  <div class="container-fluid d-flex flex-column justify-content-center flex-lg-row">
+    <!-- <div class="container d-flex flex-column align-items-center d-lg-none">
+      <h5 class="my-5"><strong>YOUR BAG</strong></h5>
+      <div class="total_checkout w-100 d-flex flex-column align-items-start">
+        <div class="total_row d-flex w-100 mb-4">
+          <span class="me-auto">TOTAL incl Delivery</span>
+          <span class=""><strong>€5000</strong></span>
+        </div>
+        <button (click)="onClick()" class="btn btn-dark btn-lg w-100">CHECKOUT</button>
+      </div>
+    </div> -->
+    <!-- Product View -->
+    <div class="container my-4">
+      <h5 class="my-5"><strong>YOUR BAG</strong></h5>
+      <div class="basket_content_info container-fluid mt-5 w-100 d-flex justify-content-between ">
+        <span>Shipment 1/1</span>
+        <span class="basket_content_line"></span>
+        <span>From LOCATION</span>
+      </div>
+      <div class="grid" *ngFor="let item of products">
+        <div class="row d-flex flex-column">
+          <div class="col">
+            <!-- One Product View -->
+            <div class="d-flex justify-content-between mt-3">
+              <!-- Image Utilities -->
+              <div class="d-flex me-2 mb-auto">
+                <img src="{{item.coverImg}}" alt="" width="100px" height="100px">
+              </div>
+              <!-- Info Utilities -->
+              <div class="d-flex flex-column">
+                <span class="mb-2">{{item.description}}</span>
+                <span class="text-secondary">{{item.brand}}</span>
+                <!-- <span class="my-2">Ei mäleta mis siin oli</span> -->
+                <!-- Quantity option -->
+                <select class="form-select mt-2" aria-label="Default select example">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <!-- Remove icon and price row -->
+              <div class="d-flex flex-column align-items-end justify-content-between ms-5">
+                <div class="remove_button">
+                  <button (click)="removeItem(item)" class="btn btn-lg pe-0">
+                    <i class="bi bi-trash-fill"></i>
+                  </button>
+                </div>
+                <div class="price_span pb-3">
+                  <span>€{{item.price}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Checkout Footer -->
+    <div class="container d-flex flex-column bg-light py-4 justify-content-lg-start">
+      <h5 class="my-5 d-lg-f"><strong>PAYMENT</strong></h5>
+      <div class="d-flex justify-content-between py-1">
+        <span>Items total</span>
+        <span>€ {{grandTotal}}</span>
+      </div>
+      <div class="d-flex justify-content-between pt-1 pb-3">
+        <span>Delivery</span>
+        <span>Free</span>
+      </div>
+      <div class="d-flex justify-content-between pt-3 pb-3 border-top">
+        <span><strong>TOTAL</strong></span>
+        <span><strong>€ {{grandTotal}}</strong></span>
+      </div>
+      <button (click)="onClick()" class="btn btn-dark btn-lg w-100">CHECKOUT</button>
+
+      <h6 class="text-center pt-5"><strong> FREE RETURNS WORLDWIDE</strong></h6>
+      <h6 class="text-center fw-lighter text-secondary">Learn more</h6>
+
+    </div>
+  </div>
+</ng-container>
+<!-- Empty Bag View -->
+<ng-container *ngIf="products.length ==0">
+  <div class="container-fluid d-flex" style="height: 100vh; align-items: center;">
+    <div class="container d-flex flex-column justify-content-center align-items-center mb-5">
+      <h2 class="mb-5"><strong>YOUR BAG</strong></h2>
+      <p class="my-4 d-flex text-center">Your shopping bag is currently empty. Find something
+        exciting to put in it!</p>
+      <button [routerLink]="['#']" routerLinkActive="router-link-active"  class="btn btn-dark">Start Shopping</button>
+    </div>
+  </div>
+</ng-container>
+
+
+
+<app-footer></app-footer>
